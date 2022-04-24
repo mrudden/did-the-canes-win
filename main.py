@@ -49,7 +49,7 @@ def index():
   previous_game_venue = prev_response_data['teams'][0]['previousGameSchedule']['dates'][0]['games'][0]['venue']['name'] + '.'
 
   if 'PNC Arena' in previous_game_venue:
-    previous_game_venue += ', the LOUDEST HOUSE in the NHL!'
+    previous_game_venue = 'PNC Arena, the LOUDEST HOUSE in the NHL!'
 
   previous_game_state = prev_response_data['teams'][0]['previousGameSchedule']['dates'][0]['games'][0]['status']['detailedState']
 
